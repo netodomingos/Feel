@@ -24,15 +24,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "androidNavigationBar" : { 
-        "visible" : false 
-      } 
-    },
-    "android": {
-      "androidNavigationBar" : { 
-       "visible" : false 
-     } 
+      "supportsTablet": true
     }
+    
   }
 }

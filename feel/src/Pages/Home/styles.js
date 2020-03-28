@@ -20,7 +20,7 @@ export default StyleSheet.create({
 
     textGroup: {
         marginTop: 40,
-        marginHorizontal: 30,
+        marginHorizontal: 20,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -45,6 +45,20 @@ export default StyleSheet.create({
     animation: {
         justifyContent: 'center',
         alignItems: "center"
-    }
+    },
+
+    buttonContainer: {
+        marginTop: 40,
+        justifyContent: 'center',
+        alignItems: "center",
+    },
+
+    button:{
+        backgroundColor: '#EC6C6E',
+        padding: 15,
+        borderRadius: 8,
+        width: 55,
+        alignItems: "center"
+    },
 
 })
