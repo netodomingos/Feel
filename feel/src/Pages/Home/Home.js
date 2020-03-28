@@ -25,9 +25,6 @@ export default function Home() {
     }
   }
 
-  function navigate(){
-    navigation.navigate('anxiety')
-  }
 
   return (
     <View style={styles.container}>
@@ -55,7 +52,7 @@ export default function Home() {
 
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button}
-            onPress={navigate}
+            onPress={() => navigation.navigate('anxiety')}
           >
             <AntDesign name='arrowright' size={20} color='#FFF' style={styles.icon} /> 
           </TouchableOpacity>

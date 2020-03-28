@@ -12,6 +12,10 @@ export default StyleSheet.create({
         marginHorizontal: 40,
     },
 
+    button:{
+        alignItems: 'flex-end'
+    },
+
     title: {
         color: '#FFF',
         fontSize: 60,
@@ -23,5 +27,29 @@ export default StyleSheet.create({
         marginTop: 5,
         fontSize: 15
 
+    },
+    topic: {
+        marginTop: 40,
+        marginHorizontal: 20,
+        color: '#FFF',
+        fontSize: 25,
+        fontWeight: "bold"
+    },
+    
+    scrollViewContainer: {
+        
+    },
+
+    menuButton: {
+        marginHorizontal: 10,
+    },
+
+    menuItem: {
+        backgroundColor: '#EC6C6E',
+        padding: 15,
+        borderRadius: 8,
+        color: '#FFF',
+        fontWeight: "bold",
+        fontSize: 18
     }
 })
