@@ -8,6 +8,7 @@ const Stack = createStackNavigator();
 // Routes
 import Home from './Pages/Home/Home'
 import Anxiety from './Pages/Anxiety/Anxiety'
+import Post from './Pages/Post/Post'
 
 export default function Routes() {
   return (
@@ -20,6 +21,7 @@ export default function Routes() {
         >
             <Stack.Screen name='home' component={Home} />
             <Stack.Screen name='anxiety' component={Anxiety} />
+            <Stack.Screen name='post' component={Post} />
         </Stack.Navigator>
     </NavigationContainer>
   );

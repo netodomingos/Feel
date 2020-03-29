@@ -51,5 +51,51 @@ export default StyleSheet.create({
         color: '#FFF',
         fontWeight: "bold",
         fontSize: 18
+    },
+
+    flatListContainer: {
+        marginTop: 30,
+    },
+
+    flatList:{
+        flexDirection: "row",
+        justifyContent: 'space-between',
+        marginHorizontal: 10,
+        marginVertical: 10,
+        padding: 10,
+        borderRadius: 8,
+    },
+
+    flatListItens: {
+        flexDirection: 'row'
+    },
+
+    photo: {
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        borderWidth: 2,
+        borderColor: '#EC6C6E'
+    },
+
+    informations: {
+        marginLeft: 20,
+        justifyContent: 'center'
+    },
+    
+    owner: {
+        color: "#EC6C6E",
+        fontWeight: "bold",
+        fontSize: 17
+    },
+
+    postDescription: {
+        color: "#DDD",
+        fontSize: 12
+    },
+
+    arrow:{
+        justifyContent: 'center',
+        
     }
 })
