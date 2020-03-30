@@ -10,6 +10,11 @@
 ## Sobre a Aplicação	
 Aplicativo que ajuda pessoas com alto nível de ansiedade, indicando posts feitos por outras pessoas, que passaram ou passam, por problemas semelhantes, há encontrarem uma solução, seja ela imediata ou progressiva!
 
+<p align="center">
+<img src="https://github.com/netodomingos/Feel/blob/master/feel.gif" width="350" height="700"  />
+</p>
+
+
 ## Mais sobre a idéia
 
 ### Foco nas pessoas! 👥	
