@@ -9,6 +9,9 @@
 
 ## Sobre a Aplicação	
 Aplicativo que ajuda pessoas com alto nível de ansiedade, indicando posts feitos por outras pessoas, que passaram ou passam, por problemas semelhantes, há encontrarem uma solução, seja ela imediata ou progressiva!
+<div align="center">
+  ![feel](https://media.giphy.com/media/ln7jHBJ71pJD8hTtAB/giphy.gif)
+</div>
 
 ## Mais sobre a idéia
 
