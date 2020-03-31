@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, FlatList, Image } from 'react-native';
+
+import api from '../../services/API'
 
 import { useNavigation } from '@react-navigation/native'
 
@@ -17,7 +19,19 @@ import Victor from './assets/victor.png'
 import Ansiedade from './assets/ansiedade.jpg'
 
 export default function Anxiety() {
+  const [ posts, setPosts ] = useState([]) 
 
+  const getAllPosts = async () => {
+    const response = await api.get('/post')
+
+      console.log(response.data);
+  }
+
+  useEffect(() => {
+    getAllPosts()
+  }, [])
+
+  
   const navigation = useNavigation()
 
   const navigateBack = () => {
@@ -171,7 +185,7 @@ export default function Anxiety() {
 
       <View style={styles.flatListContainer}/>
         <FlatList 
-          keyExtractor={item => item.id}
+          keyExtractor={item => String(item.id)}
           data={data}
           renderItem={({item}) => (
             <TouchableOpacity style={styles.flatList} onPress={() => handleNavigatePost(item)}>
