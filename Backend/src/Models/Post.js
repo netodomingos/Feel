@@ -7,6 +7,14 @@ const PostSchema = new moongose.Schema({
     image: String,
     postContent: String,
     tags: [String]
+}, {
+    toJSON: {
+        virtuals: true
+    }
+})
+
+PostSchema.virtual('image_url').get(function(){
+    return `http://localhost:3333/files/${this.image}`
 })
 
 module.exports = moongose.model('Post', PostSchema)
