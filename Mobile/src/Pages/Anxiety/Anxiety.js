@@ -24,7 +24,9 @@ export default function Anxiety() {
   const getAllPosts = async () => {
     const response = await api.get('/post')
 
-      console.log(response.data);
+    setPosts(response.data)
+
+    console.log(response.data);
   }
 
   useEffect(() => {
@@ -159,7 +161,7 @@ export default function Anxiety() {
             marginRight: 20
           }}
         >
-          <TouchableOpacity style={styles.menuButton}>
+          <TouchableOpacity  style={styles.menuButton}>
             <Text style={[styles.menuItem, { marginLeft: 30 }]}>Games</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.menuButton}>
@@ -185,15 +187,15 @@ export default function Anxiety() {
 
       <View style={styles.flatListContainer}/>
         <FlatList 
+          data={posts}
           keyExtractor={item => String(item.id)}
-          data={data}
           renderItem={({item}) => (
             <TouchableOpacity style={styles.flatList} onPress={() => handleNavigatePost(item)}>
               <View style={styles.flatListItens}>
-                <Image style={styles.photo} source={item.photo}  />
+                <Image style={styles.photo} source={item.image}  />
                 <View style={styles.informations}>
-                  <Text style={styles.owner}>{item.postTitle}</Text>
-                  <Text style={styles.postDescription}>{item.postDescription}</Text>
+                  <Text style={styles.owner}>{item.title}</Text>
+                  <Text style={styles.postDescription}>{item.description}</Text>
                 </View>
               </View>
               <View style={styles.arrow}>
