@@ -35,7 +35,7 @@ As pessoas tem seu espaço para compartilhar, o que fazem elas bem em posts e ou
 #### Back-End 🛢
 * NodeJs + Express + MongoDB + diversas dependências que auxiliam o desenvolvimento.
 #### Front-End 💻
-* Em desenvolvimento ⛏
+* ReactJS + diversas dependências que auxiliam o desenvolvimento.
 
 
 
