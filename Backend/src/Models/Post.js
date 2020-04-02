@@ -14,7 +14,7 @@ const PostSchema = new moongose.Schema({
 })
 
 PostSchema.virtual('image_url').get(function(){
-    return `http://localhost:3333/files/${this.image}`
+    return `http://192.168.25.12:3333/files/${this.image}`
 })
 
 module.exports = moongose.model('Post', PostSchema)

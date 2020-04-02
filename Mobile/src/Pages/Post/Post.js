@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
 
 import { Feather } from '@expo/vector-icons'
 
@@ -18,6 +18,7 @@ export default function Post() {
     const route = useRoute()
 
     const post = route.params.post
+    
   return (
     <View style={styles.container}>
       <View style={styles.photoContainer}>
@@ -27,13 +28,31 @@ export default function Post() {
         <Image
           resizeMode='cover'
           style={styles.postImage}
-          source={post.postImage}
+          source={{uri: post.image_url}}
         />
       </View>
-      <Text style={styles.title}>{post.postTitle}</Text>
-      <Text style={styles.description}>{post.postDescription}</Text>
 
-      <Text style={styles.bigDescription}>{post.bigDescriptionPost}</Text>
+      
+      <Text style={styles.title}>{post.title}</Text>
+      <Text style={styles.description}>{post.description}</Text>
+
+      {
+        post.tags ? (
+          <Text style={styles.description}>{post.tags}</Text>
+        ) : (
+          null
+        )
+      }
+         <ScrollView
+          vertical={true}
+          showsHorizontalScrollIndicator={false}
+          style={{
+            marginTop: 30,
+            marginRight: 20
+          }}
+        >
+          <Text style={styles.postContent}>{post.postContent}</Text>
+        </ScrollView>
     </View>
   );
 }

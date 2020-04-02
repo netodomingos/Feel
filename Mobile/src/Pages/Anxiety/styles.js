@@ -73,6 +73,7 @@ export default StyleSheet.create({
     photo: {
         width: 60,
         height: 60,
+        resizeMode: 'cover',
         borderRadius: 30,
         borderWidth: 2,
         borderColor: '#EC6C6E'

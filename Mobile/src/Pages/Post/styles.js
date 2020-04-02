@@ -42,7 +42,7 @@ export default StyleSheet.create({
         color: "#FFF"
     },
 
-    bigDescription: {
+    postContent: {
         marginTop: 20,
         color: "#DDD",
         fontSize: 18,
