@@ -35,8 +35,21 @@ As pessoas tem seu espaço para compartilhar, o que fazem elas bem em posts e ou
 #### Back-End 🛢
 * NodeJs + Express + MongoDB + diversas dependências que auxiliam o desenvolvimento.
 #### Front-End 💻
-* Em desenvolvimento ⛏
+* ReactJS + diversas dependências que auxiliam o desenvolvimento.
 
 
-## Developers	
-1. [Neto Domingos](https://github.com/netodomingos)	
+
+## Pessoas 💘
+
+As pessoas que fizeram essa ideia sair do papel!
+
+##### Contribuintes
+
+| <img src="https://avatars1.githubusercontent.com/u/22457076?s=400&u=b4e1f5ba1ff081313a3ee03b05a38732f22dda93&v=4" width="100" height="100" /> |
+| :---:  |
+| [Sprained](https://github.com/Sprained) |
+
+#### Autor
+| <img src="https://avatars0.githubusercontent.com/u/49910898?s=460&u=a8c0048c6136be345c135cc098b37378c6c9b33f&v=4" width="100" height="100" /> |
+| :---:  |
+| [Neto Domingos](https://github.com/netodomingos) |
