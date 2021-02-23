@@ -1,3 +1,4 @@
+const md5 = require('md5')
 const multer = require('multer')
 const path = require('path')
 
@@ -7,7 +8,7 @@ module.exports = {
         filename: (req, file, cb) => {
             const ext = path.extname(file.originalname)
 
-            const name = path.basename(file.originalname, ext)
+            const name = path.basename(md5(file.originalname), ext)
             
             cb(null, `${name}-${Date.now()}${ext}`)
         },
